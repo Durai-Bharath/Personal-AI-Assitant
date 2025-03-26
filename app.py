@@ -11,6 +11,7 @@ from langchain.chains import LLMChain, StuffDocumentsChain
 from langchain_core.prompts import ChatPromptTemplate, PromptTemplate
 from dotenv import load_dotenv
 
+
 load_dotenv()
 API_KEY = os.getenv("GOOGLE_API_KEY")
 embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001", google_api_key=API_KEY)
