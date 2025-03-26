@@ -12,4 +12,6 @@ __pycache__/
 
 documents/
 
+.gitignore
+
 process_docs.py
