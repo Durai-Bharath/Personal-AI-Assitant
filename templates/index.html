@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Voice Chatbot</title>
+    <title>Bharath-Durai Bot</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='style.css') }}"
@@ -9,19 +11,55 @@
     <script src="{{ url_for('static', filename='scripts.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <div class="chat-container">
       <!-- Title inside the chat card -->
-      <div class="chat-title">BharathAI</div>
+      <div class="chat-title">
+        Bharath's Assistant
+        <div class="social-icons">
+          <a
+            href="https://portfolio-bharath-durai.vercel.app/"
+            target="_blank"
+            title="Portfolio"
+          >
+            <i class="fas fa-globe"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/bharath-durai/"
+            target="_blank"
+            title="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/Durai-Bharath"
+            target="_blank"
+            title="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://leetcode.com/u/BharathDurai/"
+            target="_blank"
+            title="LeetCode"
+          >
+            <i class="fas fa-code"></i>
+          </a>
+        </div>
+      </div>
 
       <!-- Scrollable Chat Box -->
       <div id="chat-box">
         <div class="message ai-msg">
           <i class="fas fa-robot"></i>
           <span
-            >Hello! I am Bharath D's personal AI assistant. Would you like to
-            know more about him?</span
+            >Hello! I am Bharath's personal AI assistant. Would you like to know
+            more about him?</span
           >
         </div>
       </div>

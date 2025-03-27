@@ -10,8 +10,7 @@ __pycache__/
 # Ignore VS Code settings
 .vscode/
 
-documents/
+documents/*.pdf
 
 .gitignore
 
-process_docs.py

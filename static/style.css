@@ -24,11 +24,31 @@ body {
 
 /* Title Styling */
 .chat-title {
-  text-align: center;
-  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
   font-weight: bold;
-  padding: 10px 0;
-  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  background: #8ec2d3;
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: rgb(45, 97, 239);
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00aced; /* Light blue color on hover */
 }
 
 /* Chat messages should be scrollable */

@@ -39,6 +39,7 @@ function speakText(markdownText) {
 function sendText() {
   let userInput = document.getElementById("user-input").value;
   let chatBox = document.getElementById("chat-box");
+  window.speechSynthesis.cancel();
 
   if (userInput.trim() !== "") {
     let defaultMsg = document.querySelector(".ai-msg");
@@ -93,7 +94,7 @@ function sendText() {
 function startRecording() {
   const inputBox = document.getElementById("user-input");
   const micButton = document.querySelector(".fa-microphone");
-
+  window.speechSynthesis.cancel();
   if (!isRecording) {
     if (
       "webkitSpeechRecognition" in window ||
